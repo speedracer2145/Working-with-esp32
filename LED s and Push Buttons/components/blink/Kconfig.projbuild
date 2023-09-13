@@ -1,0 +1,13 @@
+menu "Blink Configuration"
+  config BLINK_ON_TIME
+    int "Blink on time (ms)"
+    default 1000
+    help
+      Time in milliseconds that the LED is on.
+  
+  config BLINK_OFF_TIME
+    int "Blink off time (ms)"
+    default 1000
+    help
+      Time in milliseconds that the LED is off.
+endmenu

@@ -1,0 +1,7 @@
+menu "Display Settings"
+
+  config COUNTING_DELAY
+  int "Delay for counting (ms)"
+  default 500
+
+endmenu

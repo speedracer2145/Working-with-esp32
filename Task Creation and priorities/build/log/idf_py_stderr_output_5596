@@ -1,0 +1,19 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- idf_monitor on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40088b53: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.0.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:158
+[0m
+[0;33m0x4008176e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.0.3/components/esp_system/panic.c:424
+[0m
+[0;33m0x400864cd: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.0.3/components/esp_system/esp_system.c:153
+[0m
+[0;33m0x4008af26: abort at C:/Espressif/frameworks/esp-idf-v5.0.3/components/newlib/abort.c:38
+[0m
+[0;33m0x40088b53: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.0.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:158
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

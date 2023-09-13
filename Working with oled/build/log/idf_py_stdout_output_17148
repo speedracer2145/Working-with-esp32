@@ -1,0 +1,271 @@
+ ent�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6992
+load:0x40078000,len:15512
+load:0x40080400,len:3864
+entry 0x40080650
+[0;32mI (27) boot: ESP-IDF v5.0.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 15:37:48[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0abe4h ( 44004) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=0001ac0c vaddr=3ffb0000 size=01f34h (  7988) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=0001cb48 vaddr=40080000 size=034d0h ( 13520) load[0m
+[0;32mI (127) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19274h (103028) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003929c vaddr=400834d0 size=0a054h ( 41044) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811a0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     blink[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Sep 11 2023 15:36:19[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  14112dc6ded1eb1c...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.0.3-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB2C90 len 0002D370 (180 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008D524 len 00012ADC (74 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;31mE (2740) ultrasonic_driver: Continuously high[0m
+[0;31mE (3110) ultrasonic_driver: Echo did not end[0m
+[0;31mE (3210) ultrasonic_driver: Continuously high[0m
+[0;31mE (3420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (3520) ultrasonic_driver: Continuously high[0m
+[0;31mE (3650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (3750) ultrasonic_driver: Continuously high[0m
+[0;31mE (4130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (4230) ultrasonic_driver: Continuously high[0m
+[0;31mE (4420) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (5020) ultrasonic_driver: Continuously high[0m
+[0;31mE (5420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (5520) ultrasonic_driver: Continuously high[0m
+[0;31mE (5650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (5750) ultrasonic_driver: Continuously high[0m
+[0;31mE (6130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (6230) ultrasonic_driver: Continuously high[0m
+[0;31mE (6420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (6520) ultrasonic_driver: Continuously high[0m
+[0;31mE (6650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (7250) ultrasonic_driver: Continuously high[0m
+[0;31mE (7420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (7520) ultrasonic_driver: Continuously high[0m
+[0;31mE (7650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (7760) ultrasonic_driver: Continuously high[0m
+[0;31mE (8130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (8230) ultrasonic_driver: Continuously high[0m
+[0;31mE (8420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (8520) ultrasonic_driver: Continuously high[0m
+[0;31mE (8650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (9250) ultrasonic_driver: Continuously high[0m
+[0;31mE (9420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (9520) ultrasonic_driver: Continuously high[0m
+[0;31mE (9650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (9760) ultrasonic_driver: Continuously high[0m
+[0;31mE (10130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (10230) ultrasonic_driver: Continuously high[0m
+[0;31mE (10420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (10520) ultrasonic_driver: Continuously high[0m
+[0;31mE (10650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (11250) ultrasonic_driver: Continuously high[0m
+[0;31mE (11420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (11520) ultrasonic_driver: Continuously high[0m
+[0;31mE (11650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (11750) ultrasonic_driver: Continuously high[0m
+[0;31mE (12130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (12230) ultrasonic_driver: Continuously high[0m
+[0;31mE (12420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (12520) ultrasonic_driver: Continuously high[0m
+[0;31mE (12650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (13250) ultrasonic_driver: Continuously high[0m
+[0;31mE (13420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (13520) ultrasonic_driver: Continuously high[0m
+[0;31mE (13650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (13750) ultrasonic_driver: Continuously high[0m
+[0;31mE (14130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (14230) ultrasonic_driver: Continuously high[0m
+[0;31mE (14420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (14520) ultrasonic_driver: Continuously high[0m
+[0;31mE (14650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (15250) ultrasonic_driver: Continuously high[0m
+[0;31mE (15420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (15520) ultrasonic_driver: Continuously high[0m
+[0;31mE (15650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (15760) ultrasonic_driver: Continuously high[0m
+[0;31mE (16130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (16230) ultrasonic_driver: Continuously high[0m
+[0;31mE (16420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (16520) ultrasonic_driver: Continuously high[0m
+[0;31mE (16650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (17250) ultrasonic_driver: Continuously high[0m
+[0;31mE (17420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (17520) ultrasonic_driver: Continuously high[0m
+[0;31mE (17650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (17760) ultrasonic_driver: Continuously high[0m
+[0;31mE (18130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (18230) ultrasonic_driver: Continuously high[0m
+[0;31mE (18420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (18520) ultrasonic_driver: Continuously high[0m
+[0;31mE (18650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (19250) ultrasonic_driver: Continuously high[0m
+[0;31mE (19420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (19520) ultrasonic_driver: Continuously high[0m
+[0;31mE (19650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (19760) ultrasonic_driver: Continuously high[0m
+[0;31mE (20130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (20230) ultrasonic_driver: Continuously high[0m
+[0;31mE (20420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (20520) ultrasonic_driver: Continuously high[0m
+[0;31mE (20650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (21250) ultrasonic_driver: Continuously high[0m
+[0;31mE (21420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (21520) ultrasonic_driver: Continuously high[0m
+[0;31mE (21650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (21750) ultrasonic_driver: Continuously high[0m
+[0;31mE (22130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (22230) ultrasonic_driver: Continuously high[0m
+[0;31mE (22420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (22520) ultrasonic_driver: Continuously high[0m
+[0;31mE (22650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (23250) ultrasonic_driver: Continuously high[0m
+[0;31mE (23420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (23520) ultrasonic_driver: Continuously high[0m
+[0;31mE (23650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (23750) ultrasonic_driver: Continuously high[0m
+[0;31mE (24130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (24230) ultrasonic_driver: Continuously high[0m
+[0;31mE (24420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (24520) ultrasonic_driver: Continuously high[0m
+[0;31mE (24650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (25250) ultrasonic_driver: Continuously high[0m
+[0;31mE (25420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (25520) ultrasonic_driver: Continuously high[0m
+[0;31mE (25650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (25750) ultrasonic_driver: Continuously high[0m
+[0;31mE (26130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (26230) ultrasonic_driver: Continuously high[0m
+[0;31mE (26420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (26520) ultrasonic_driver: Continuously high[0m
+[0;31mE (26650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (27250) ultrasonic_driver: Continuously high[0m
+[0;31mE (27420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (27520) ultrasonic_driver: Continuously high[0m
+[0;31mE (27650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (27750) ultrasonic_driver: Continuously high[0m
+[0;31mE (28130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (28230) ultrasonic_driver: Continuously high[0m
+[0;31mE (28420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (28520) ultrasonic_driver: Continuously high[0m
+[0;31mE (28650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (29250) ultrasonic_driver: Continuously high[0m
+[0;31mE (29420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (29520) ultrasonic_driver: Continuously high[0m
+[0;31mE (29650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (29760) ultrasonic_driver: Continuously high[0m
+[0;31mE (30130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (30230) ultrasonic_driver: Continuously high[0m
+[0;31mE (30420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (30520) ultrasonic_driver: Continuously high[0m
+[0;31mE (30650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (31250) ultrasonic_driver: Continuously high[0m
+[0;31mE (31420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (31520) ultrasonic_driver: Continuously high[0m
+[0;31mE (31650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (31760) ultrasonic_driver: Continuously high[0m
+[0;31mE (32130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (32230) ultrasonic_driver: Continuously high[0m
+[0;31mE (32420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (32520) ultrasonic_driver: Continuously high[0m
+[0;31mE (32650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (33260) ultrasonic_driver: Continuously high[0m
+[0;31mE (33420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (33520) ultrasonic_driver: Continuously high[0m
+[0;31mE (33650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (33760) ultrasonic_driver: Continuously high[0m
+[0;31mE (34130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (34230) ultrasonic_driver: Continuously high[0m
+[0;31mE (34420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (34520) ultrasonic_driver: Continuously high[0m
+[0;31mE (34650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (35250) ultrasonic_driver: Continuously high[0m
+[0;31mE (35420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (35520) ultrasonic_driver: Continuously high[0m
+[0;31mE (35650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (35760) ultrasonic_driver: Continuously high[0m
+[0;31mE (36130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (36230) ultrasonic_driver: Continuously high[0m
+[0;31mE (36420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (36520) ultrasonic_driver: Continuously high[0m
+[0;31mE (36650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (37250) ultrasonic_driver: Continuously high[0m
+[0;31mE (37420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (37520) ultrasonic_driver: Continuously high[0m
+[0;31mE (37650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (37750) ultrasonic_driver: Continuously high[0m
+[0;31mE (38130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (38230) ultrasonic_driver: Continuously high[0m
+[0;31mE (38420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (38520) ultrasonic_driver: Continuously high[0m
+[0;31mE (38650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (39250) ultrasonic_driver: Continuously high[0m
+[0;31mE (39420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (39520) ultrasonic_driver: Continuously high[0m
+[0;31mE (39650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (39750) ultrasonic_driver: Continuously high[0m
+[0;31mE (40130) ultrasonic_driver: Echo did not end[0m
+[0;31mE (40230) ultrasonic_driver: Continuously high[0m
+[0;31mE (40420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (40520) ultrasonic_driver: Continuously high[0m
+[0;31mE (40650) ultrasonic_driver: Echo did not end[0m
+Distance: 0 cm
+[0;31mE (41250) ultrasonic_driver: Continuously high[0m
+[0;31mE (41420) ultrasonic_driver: Echo did not end[0m
+[0;31mE (41520) ultrasonic_driver: Continuously high[0m
+[0;31mE (41650) ultrasonic_driver: Echo did not end[0m
+[0;31mE (41760) ultrasonic_driver: Continuously high[0m

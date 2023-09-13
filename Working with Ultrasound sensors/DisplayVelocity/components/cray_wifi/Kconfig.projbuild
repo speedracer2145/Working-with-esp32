@@ -1,0 +1,28 @@
+menu "WiFi Configuration"
+  config ESP_WiFi_SSID
+  string "WiFi SSID"
+  default "isaacs-hotspot"
+  help
+      Provide the WiFi's SSID where the ESP connects to.
+  
+  config ESP_WiFi_PASSWORD
+  string "WiFi Password"
+  default "isaacs-hotspot"
+  help
+      Provide the WiFi's SSID where the ESP connects to.
+
+  config ESP_WiFi_MAX_RETRY
+  int "WiFi Retry Attempts"
+  range 1 10
+  default 5
+  help
+      Defines the number of tries to connect to the AP.
+
+  config ESP_WiFi_DISCONNECT_ONLY_DISABLE
+  int "Disable DISCONNECT_ONLY directives?"
+  range 0 1
+  default 1
+  help
+      Defines if the WiFi disconnects from the AP during the execution. 
+      This is intented for testing purposes only.
+endmenu

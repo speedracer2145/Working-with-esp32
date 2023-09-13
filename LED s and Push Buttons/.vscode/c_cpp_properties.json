@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/components/**",
+                "~/esp/esp-idf/components/**",
+                "${config:esp_elf_bin}/../**",
+                "${env:HOME}/esp/esp-idf/components/freertos/port/xtensa/include/freertos/**",
+                "${env:HOME}/esp/esp-idf/components/xtensa/esp32/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "${config:esp_elf_bin}/xtensa-esp32-elf-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/components/**",
+                "~/esp/esp-idf/components/**",
+                "${config:esp_elf_bin}/../**",
+                "${userHome}/esp/esp-idf/components/freertos/port/xtensa/include/freertos/**",
+                "${userHome}/esp/esp-idf/components/xtensa/esp32/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "${config:win_esp_elf_bin}/xtensa-esp32-elf-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/bootloader/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
